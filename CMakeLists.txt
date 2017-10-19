@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.2.0)
+project( ProfIntensiteLigne )
+find_package( OpenCV REQUIRED )
+add_executable( ProfIntensiteLigne ProfIntensiteLigne.cpp)
+target_link_libraries( ProfIntensiteLigne ${OpenCV_LIBS} )
